@@ -1,3 +1,4 @@
+import "./styles.css"
 import {html, LitElement} from 'lit'
 import {customElement, property} from 'lit/decorators.js'
 
@@ -5,7 +6,11 @@ import {customElement, property} from 'lit/decorators.js'
 export class MyComponent extends LitElement {
   @property({type: String}) name = "";
 
+  protected createRenderRoot() {
+    return this;
+  }
+
   render() {
-    return html`<p>Hello ${this.name}</p>`
+    return html`<p class="mx-auto text-center p-8">Hello ${this.name}</p>`
   }
 }
