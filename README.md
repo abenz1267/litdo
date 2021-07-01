@@ -1,3 +1,3 @@
-# Lit Typescript Template
+# Lit Typescript Tailwind Rollup
 
-Just a really barebones template based on [this template](https://github.com/PolymerLabs/lit-element-starter-ts).
+Barebones template.
