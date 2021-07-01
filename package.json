@@ -1,0 +1,31 @@
+{
+  "version": "0.0.0",
+  "description": "Base template for Lit. Typescript",
+  "type": "module",
+  "author": "Andrej Benz",
+  "license": "MIT",
+  "scripts": {
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:eslint": "eslint 'src/**/*.ts'",
+    "lint:lit-analyzer": "lit-analyzer",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "wds"
+  },
+  "keywords": ["web-components", "lit-element", "typescript", "lit"],
+  "dependencies": {
+    "lit": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "@web/dev-server": "^0.1.17",
+    "@web/dev-server-legacy": "^0.1.7",
+    "@webcomponents/webcomponentsjs": "^2.5.0",
+    "eslint": "^7.29.0",
+    "lit-analyzer": "^0.0.6",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.4"
+  }
+}
