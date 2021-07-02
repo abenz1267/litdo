@@ -5,8 +5,8 @@ import {ListController} from './list-controller'
 import {repeat} from 'lit/directives/repeat.js'
 import {createRef, Ref, ref} from 'lit/directives/ref.js'
 
-@customElement('my-component')
-export class MyComponent extends LitElement {
+@customElement('lit-do')
+export class LitDo extends LitElement {
   private list = new ListController(this)
   inputRef: Ref<HTMLInputElement> = createRef()
 
