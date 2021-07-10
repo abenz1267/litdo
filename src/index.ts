@@ -124,7 +124,7 @@ export class LitDo extends LitElement {
       'h-full': true,
       'overflow-scroll': true,
       flex: true,
-      "flex-col": true,
+      'flex-col': true,
       hidden: show,
     }
 
@@ -133,7 +133,12 @@ export class LitDo extends LitElement {
         <ul class="max-h-full p-4 flex-grow h-full overflow-scroll">
           ${repeat(list, (item) => item, this.listItem)}
         </ul>
-        <button class=${this.showCompleted ? 'm-2 p-2' : 'hidden'} @click=${this.clearCompleted}>clear all</button>
+        <button
+          class=${this.showCompleted ? 'm-2 p-2' : 'hidden'}
+          @click=${this.clearCompleted}
+        >
+          clear all
+        </button>
       </div>
     `
   }

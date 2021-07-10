@@ -1,4 +1,4 @@
-import {legacyPlugin} from '@web/dev-server-legacy';
+import {legacyPlugin} from '@web/dev-server-legacy'
 
 export default {
   appIndex: 'dev/index.html',
@@ -13,4 +13,4 @@ export default {
       },
     }),
   ],
-};
+}

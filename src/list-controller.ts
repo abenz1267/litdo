@@ -6,7 +6,8 @@ export class ListController implements ReactiveController {
   host: ReactiveControllerHost
 
   constructor(host: ReactiveControllerHost) {
-    (this.host = host).addController(this)
+    this.host = host
+    this.host.addController(this)
   }
 
   public addItem(item: string) {
