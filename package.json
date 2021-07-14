@@ -9,17 +9,12 @@
     "lint:eslint": "eslint 'src/**/*.ts'",
     "lint:lit-analyzer": "lit-analyzer",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
-    "build": "rollup -c",
-    "watch": "rollup -c --watch",
-    "serve": "wds"
+    "build": "rollup -c rollup.prod.config.js",
+    "dev": "rollup -c rollup.dev.config.js --watch"
   },
-  "keywords": [
-    "web-components",
-    "lit-element",
-    "typescript",
-    "lit"
-  ],
+  "keywords": ["web-components", "lit-element", "typescript", "lit"],
   "dependencies": {
+    "@vaadin/router": "^1.7.4",
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
@@ -27,8 +22,6 @@
     "@rollup/plugin-typescript": "^8.2.1",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
-    "@web/dev-server": "^0.1.17",
-    "@web/dev-server-legacy": "^0.1.7",
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "autoprefixer": "^10.2.6",
     "eslint": "^7.29.0",
@@ -36,6 +29,7 @@
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
     "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-serve": "^1.1.0",
     "tailwindcss": "^2.2.4",
     "typescript": "^4.3.4"
   }
