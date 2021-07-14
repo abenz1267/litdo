@@ -2,6 +2,7 @@ import typescript from '@rollup/plugin-typescript'
 import resolve from '@rollup/plugin-node-resolve'
 import postcss from 'rollup-plugin-postcss'
 import serve from 'rollup-plugin-serve'
+import livereload from 'rollup-plugin-livereload'
 
 export default {
   input: 'src/index.ts',
@@ -20,6 +21,7 @@ export default {
       open: true,
       historyApiFallback: '/',
       port: 8080
-    })
+    }),
+    livereload(),
   ],
 }
